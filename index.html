@@ -1,0 +1,164 @@
+<html>
+  <head>
+    <link rel = "stylesheet"
+          type = "text/css"
+          href = "CSS/styles.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://use.typekit.net/vcj8keb.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+          <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+                // Load the Visualization API and the corechart package.
+                google.charts.load('current', {'packages':['corechart']});
+
+                // Set a callback to run when the Google Visualization API is loaded.
+                google.charts.setOnLoadCallback(drawChart);
+
+                // Callback that creates and populates a data table,
+                // instantiates the pie chart, passes in the data and
+                // draws it.
+                function drawChart() {
+
+                  // Create the data table.
+                  var data = new google.visualization.DataTable();
+                  data.addColumn('string', 'Skill');
+                  data.addColumn('number', 'Percentage');
+                  data.addRows([
+                    ['Ideation', 3],
+                    ['Wireframing', 1],
+                    ['Information Architecture', 1],
+                    ['Visual Design', 1],
+                    ['Interaction Design', 4],
+                    ['Filmmaking', 3],
+                    ['Prototyping', 2]
+                  ]);
+
+                  // Set chart options
+                  var options = {'width':400,
+                                 'height':400,
+                                 'backgroundColor':'none',
+                                 colors:['#00DCFF','#0CE880','#FFE501','#FF7101','#F13097','#FF4445','#FFC0F2'],
+                                 'chartArea':{right:20, top:30, width:'100%', height:'100%'},
+                                 'fontName':'europa',
+                                 'fontSize':24,
+                                 'pieSliceBorderColor':'none',
+                                 'pieSliceText':'none',
+                                 'pieHole':'0',
+                                 'legend':{position:'none'},
+                                 'tooltip':{showColorCode:'true'},
+
+
+                                 };
+
+                  // Instantiate and draw our chart, passing in some options.
+                  var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+                  chart.draw(data, options);
+                }
+              </script>
+  </head>
+  <body>
+    <header logo>
+      <img src="images/jef-cunningham-heart-hand-logo.svg" />
+    </header>
+    <main container>
+      <section intro>
+        <article>
+          <p><strong>Jef Cunningham is a designer.</strong><br><br>
+            He loves simple, poetic expressions. His work has included apps, physical interfaces, retail designs, campaigns, websites, films, and more. He's a talented brainstormer and ideator, but also has a proven track record of collaborating with engineering teams to carry products to market. Jef has honed his skills at places like IDEO and Apple and his work has won several awards.<br>
+            <br>When he's not designing, he is dabbling in electronic music making, initiating short film projects, or going out for a morning <a href="http://www.surfline.com/surf-forecasts/spot/bolinas-jetty_5091/">surfing</a> session. He also has his own entrepreneurial venture underway as the founder of a video making tool called Snowball.<br><br><br>
+          </p>
+        </article>
+      </section>
+
+      <section grid>
+        <article column='2'>
+          <p><strong>Work</strong></p>
+        </article>
+        <article column>
+          <ul>
+            <li>A refreshing look at <a href="http://www.sf72.org"> disaster preparedness</a></li>
+            <li>A new kind of <a href="http://www.nextdoorchi.com">banking experience</a> for millenials</li>
+            <li>A new way of delivering <a href="http://www.soundworldsolutions.com/blog/designing-an-affordable-hearing-aid-with-a-social-mission-in-mind">hearing aids</a> to massive rural populations in India</li>
+            <li>A birth control <a href="https://www.ideo.com/case-study/building-a-birth-control-support-network-for-women">support network</a> for younger women</li>
+            <li>A new <a href="http://www.snowball.is">video app</a> to enable people to make a film of their life.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section grid>
+        <article column='2'>
+          <p><strong>Currently</strong></p>
+        </article>
+        <article column='6'>
+          <p>
+            <span class="blueText">Ideation</span><br>
+            <span class="greenText">Wireframing</span><br>
+            <span class="yellowText">Information Architecture</span><br>
+            <span class="orangeText">Visual Design</span><br>
+            <span class="magentaText">Interaction Design</span><br>
+            <span class="redText">Filmmaking &amp; Storytelling</span><br>
+            <span class="pinkText">Prototyping &amp; Coding</span><br>
+          </p>
+        </article>
+
+        <article column>
+        <!--Div that will hold the pie chart-->
+        <div id="chart_div"></div>
+        </article>
+
+      </section>
+
+      <section grid>
+        <article column='2'>
+          <p><strong>Awards</strong></p>
+        </article>
+        <article column>
+          <p style="font-size: 28">IDEA Gold - Service Design<br>
+            IDEA Bronze - Research<br>
+            IDEA Bronze - Design Strategy</p>
+        </article>
+        <article column>
+          <p style="font-size: 28">Spark Gold Award<br>
+          ISDA Silver - Research<br>
+          ISDA Silver - Service Design</p>
+        </article>
+      </section>
+
+
+      <section grid>
+        <article column='2'>
+          <p><strong>Listen</strong></p>
+        </article>
+        <article column>
+          <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/8472674&amp;color=00dcff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+        </article>
+      </section>
+
+      <section grid>
+        <article column='2'>
+          <p><strong>Connect</strong></p>
+        </article>
+        <article column>
+          <p>
+            <a href="https://www.linkedin.com/in/jefcunningham/"><i class="fa fa-linkedin" style="font-size:36px;">  </i></a>
+            <a href="http://www.twitter.com/crowcrag"><i class="fa fa-twitter" style="font-size:36px;">  </i></a>
+            <a href="http://www.instagram.com/crowcrag"><i class="fa fa-instagram" style="font-size:36px;">  </i></a>
+          </p>
+        </article>
+      </section>
+
+  </main>
+
+
+
+  <!--iframe that will hold the itunes playlist-->
+
+<footer>
+    <p container style="font-size: 18">  &#64; 2017 Jef Cunningham</p>
+</footer>
+  </body>
+</html>
