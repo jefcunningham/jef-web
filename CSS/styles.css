@@ -1000,6 +1000,7 @@ table {
 */
     header[logo] {
       position: fixed;
+      opacity: 1;
       top: 1.5rem;
       left: 50%;
       -webkit-transform: translateX(-50%);
