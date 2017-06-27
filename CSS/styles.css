@@ -10,7 +10,10 @@ body {
   color:#00DCFF;
 }
 .greenText {
-  color:#0CE880;
+  color:#0CE8AD;
+}
+.yellowgreenText {
+  color:#7FE80C;
 }
 .yellowText {
   color:#FFE501;
@@ -26,6 +29,9 @@ body {
 }
 .pinkText {
   color:#FFC0F2;
+}
+.lilacText {
+  color:#D9C0FF;
 }
 
 

@@ -39,19 +39,21 @@
                   data.addColumn('number', 'Percentage');
                   data.addRows([
                     ['Ideation', 3],
+                    ['Creative Direction', 3],
                     ['Wireframing', 1],
                     ['Information Architecture', 1],
-                    ['Visual Design', 1],
+                    ['Visual Design', 2],
                     ['Interaction Design', 4],
                     ['Filmmaking', 3],
-                    ['Prototyping', 2]
+                    ['Prototyping', 2],
+                    ['Play', 1]
                   ]);
 
                   // Set chart options
-                  var options = {'width':400,
-                                 'height':400,
+                  var options = {'width':380,
+                                 'height':380,
                                  'backgroundColor':'none',
-                                 colors:['#00DCFF','#0CE880','#FFE501','#FF7101','#F13097','#FF4445','#FFC0F2'],
+                                 colors:['#00DCFF','#0CE8AD', '#7FE80C', '#FFE501','#FF7101','#F13097','#FF4445','#FFC0F2', '#D9C0FF'],
                                  'chartArea':{right:20, top:30, width:'100%', height:'100%'},
                                  'fontName':'europa',
                                  'fontSize':24,
@@ -94,12 +96,14 @@
         <article column='6'>
           <p>
             <span class="blueText">Ideation</span><br>
-            <span class="greenText">Wireframing</span><br>
+            <span class="greenText">Creative Direction</span><br>
+            <span class="yellowgreenText">Wireframing</span><br>
             <span class="yellowText">Information Architecture</span><br>
             <span class="orangeText">Visual Design</span><br>
             <span class="magentaText">Interaction Design</span><br>
             <span class="redText">Filmmaking &amp; Storytelling</span><br>
             <span class="pinkText">Prototyping &amp; Coding</span><br>
+            <span class="lilacText">Play</span><br>
           </p>
         </article>
         <article column>
