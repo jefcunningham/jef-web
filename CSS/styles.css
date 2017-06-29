@@ -89,6 +89,7 @@ template,
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   background-color: #F8FFED;
+  background: linear-gradient(to bottom, #FFFDD6, #E6FEFF 50%, #FFE4FB);
   color: #000;
   font-size: 24px;
   text-rendering: optimizeLegibility; }
